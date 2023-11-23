@@ -1,0 +1,45 @@
+.all {
+  display: flex;
+  justify-content: space-around;
+}
+
+.table {
+  border: 2px solid black;
+}
+table td {
+  padding: 15px;
+  line-height: 1.5;
+  vertical-align: top;
+  border: 1px solid hsla(0, 0%, 50.2%, 0.5019607843);
+}
+td {
+  padding: 10px;
+}
+
+table {
+}
+.v {
+  background-color: green;
+  border-radius: 30px;
+}
+.d {
+  background-color: red;
+  border-radius: 30px;
+}
+.e {
+  background-color: grey;
+  border-radius: 30px;
+}
+.time {
+  width: 120px;
+}
+.one-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px;
+  border: 2px solid black;
+  height: 300px;
+  width: 20%;
+}

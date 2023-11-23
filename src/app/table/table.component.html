@@ -1,0 +1,28 @@
+<div class="all">
+  <table class="table">
+    <th colspan="3">clube</th>
+    <th>Pts</th>
+    <th>PJ</th>
+    <th>VIT</th>
+    <th>E</th>
+    <th>DER</th>
+    <th>GM</th>
+    <th>GC</th>
+    <tr *ngFor="let team of teams">
+      <td>{{ team.position }}</td>
+      <td><img src="{{ team.shield }}" alt="" width="20px" /></td>
+      <td class="tdEspaco time" (click)="getTeam(team.id)">
+        {{ team.name }}
+      </td>
+      <td>{{ team.points }}</td>
+      <td>{{ team.matches }}</td>
+      <td>{{ team.wins }}</td>
+      <td>{{ team.draws }}</td>
+      <td>{{ team.loses }}</td>
+      <td>{{ team.goals_scored }}</td>
+      <td>{{ team.goals_conceded }}</td>
+    </tr>
+  </table>
+
+  <app-team></app-team>
+</div>

@@ -1,0 +1,20 @@
+<div class="one-team" *ngIf="oneTeam">
+  <h1>{{ oneTeam.name }}</h1>
+  <img src="{{ oneTeam.shield }}" alt="" width="100px" />
+  <div class="points">
+    <table>
+      <th>Pts</th>
+      <th>PJ</th>
+      <th>VIT</th>
+      <th>E</th>
+      <th>DER</th>
+      <tr>
+        <td>{{ oneTeam.points }}</td>
+        <td>{{ oneTeam.matches }}</td>
+        <td>{{ oneTeam.wins }}</td>
+        <td>{{ oneTeam.draws }}</td>
+        <td>{{ oneTeam.loses }}</td>
+      </tr>
+    </table>
+  </div>
+</div>
